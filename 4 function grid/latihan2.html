@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid | Min Content & Max Content</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #ddd;
+      }
+
+      .container {
+        width: 60%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+      }
+
+      .item {
+        background-color: rgb(138, 209, 254);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .item:nth-child(even) {
+        background-color: rgb(255, 142, 142);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem necessitatibus neque fugiat nam at enim dignissimos corrupti tempora. Explicabo sunt, velit enim et natus error a soluta saepe, ducimus quisquam optio magni. Debitis eum ab, sit dicta voluptatem quasi distinctio? Cumque atque amet deserunt fuga esse ducimus voluptate explicabo neque? Magnam culpa accusantium ut fugit, quis eaque laboriosam quasi ducimus sit, labore totam mollitia ratione tenetur magni unde eveniet temporibus illo, molestias nam provident ab. Mollitia, incidunt vel itaque iste recusandae minus iusto commodi veniam, est quaerat aspernatur deserunt tempore?</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">
+       dede syarifudin alhadid 
+      </div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+     
+    </div>
+  </body>
+</html>
